@@ -24,18 +24,6 @@ html {
   margin: 0 auto;
 }
 
-.player .icon-pause {
-  display: none;
-}
-
-.player.playing .icon-pause {
-  display: inline-block;
-}
-
-.player.playing .icon-play {
-  display: none;
-}
-
 .dashboard {
   padding: 16px 16px 14px;
   background-color: #fff;
@@ -58,8 +46,10 @@ header h4 {
 }
 
 header h2 {
+  margin-top: 10px;
   color: var(--text-color);
   font-size: 20px;
+  font-weight: 600;
 }
 
 /* CD */
@@ -115,17 +105,20 @@ header h2 {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
+  border-radius: 5px;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  cursor: pointer;
+  accent-color:var(--primary-color);
 }
 
 .progress::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 12px;
+  width: 20px;  
   height: 6px;
   background-color: var(--primary-color);
-  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* PLAYLIST */
@@ -151,19 +144,22 @@ header h2 {
 .song:active {
   opacity: 0.8;
 }
-
+.author{
+  margin-top: 5px;
+}
 .song.active .option,
 .song.active .author,
 .song.active .title {
   color: #fff;
 }
 
-.song .thumb {
+.song img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
   margin: 0 8px;
+  object-fit: cover;
 }
 
 .song .body {

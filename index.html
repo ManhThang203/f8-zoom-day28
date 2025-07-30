@@ -16,7 +16,10 @@
     />
     <link rel="stylesheet" href="./assest/css/reset.css" />
     <link rel="stylesheet" href="./assest/css/style.css" />
-    <link rel="stylesheet" href="./assest/music/UpgradeRememberMe-SonTungMTP-4263862.mp3">
+    <link
+      rel="stylesheet"
+      href="./assest/music/UpgradeRememberMe-SonTungMTP-4263862.mp3"
+    />
   </head>
   <body>
     <div class="player">
@@ -24,23 +27,20 @@
       <div class="dashboard">
         <!-- Header -->
         <header>
-          <h4>Now playing:</h4>
+          <h4>YoungToBI</h4>
           <h2 id="name-song"></h2>
         </header>
 
         <!-- CD -->
-        <div class="cd">
-          <div
-            class="cd-thumb"
-            style="
-              background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');
-            "
-          ></div>
+        <div class="cd" id="cd">
+          <div class="cd-thumb" id="cd-thumb">
+            <img src="./assest/img/chungtakhongthuocvenhau.jpg" alt="Ảnh-cd" id="img-cd"/>
+          </div>
         </div>
 
         <!-- Control -->
         <div class="control">
-          <div class="btn btn-repeat">
+          <div class="btn btn-repeat" id="btn-loop">
             <i class="fas fa-redo"></i>
           </div>
           <div class="btn btn-prev" id="btn-prev">
@@ -52,7 +52,7 @@
           <div class="btn btn-next" id="btn-next">
             <i class="fas fa-step-forward"></i>
           </div>
-          <div class="btn btn-random">
+          <div class="btn btn-random" id="btn-random">
             <i class="fas fa-random"></i>
           </div>
         </div>
@@ -71,9 +71,7 @@
       </div>
 
       <!-- Playlist -->
-      <div class="playlist" id="playlist">
-      
-      </div>
+      <div class="playlist" id="playlist"></div>
     </div>
     <script src="./js/main.js"></script>
   </body>
